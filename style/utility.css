@@ -9,8 +9,9 @@
 
 .btn {
     font-size: 1rem;
-    width: 160px !important;
-    aspect-ratio: 4;
+    min-width: 120px !important;
+    max-width: 120px !important;
+    aspect-ratio: 2;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -9,6 +9,16 @@
         <link rel="stylesheet" href="style/style.css" />
         <link rel="stylesheet" href="style/utility.css" />
         <link
+            rel="stylesheet"
+            media="screen and (min-width: 800px) and (max-width: 1100px)"
+            href="style/medium-style.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 799px)"
+            href="style/mobile-style.css"
+        />
+        <link
             href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap"
             rel="stylesheet"
         />
@@ -19,78 +29,83 @@
             <div class="target side"></div>
             <div id="panel" class="flex-center">
                 <div id="input-area" class="flex-center">
-                    <div class="input-box">
-                        <p>RED</p>
-                        <input
-                            type="range"
-                            id="red"
-                            min="0"
-                            max="255"
-                            step="1"
-                        />
+                    <div id="sliders" class="flex-center">
+                        <div class="slider-box">
+                            <p>RED</p>
+                            <input
+                                type="range"
+                                id="red"
+                                min="0"
+                                max="255"
+                                step="1"
+                            />
+                        </div>
+                        <div class="slider-box">
+                            <p>GREEN</p>
+                            <input
+                                type="range"
+                                id="green"
+                                min="0"
+                                max="255"
+                                step="1"
+                            />
+                        </div>
+                        <div class="slider-box">
+                            <p>BLUE</p>
+                            <input
+                                type="range"
+                                id="blue"
+                                min="0"
+                                max="255"
+                                step="1"
+                            />
+                        </div>
                     </div>
-                    <div class="input-box">
-                        <p>GREEN</p>
-                        <input
-                            type="range"
-                            id="green"
-                            min="0"
-                            max="255"
-                            step="1"
-                        />
-                    </div>
-                    <div class="input-box">
-                        <p>BLUE</p>
-                        <input
-                            type="range"
-                            id="blue"
-                            min="0"
-                            max="255"
-                            step="1"
-                        />
-                    </div>
+
+                    <button type="button" id="guess" class="btn">Guess</button>
                 </div>
-                <button type="button" id="guess" class="btn">Guess</button>
-                <div class="card">
-                    <div class="flex-center"><p>RESULT</p></div>
-                    <table>
-                        <tr>
-                            <td>RED:</td>
-                            <td><span class="result-value">0</span>%</td>
-                        </tr>
-                        <tr>
-                            <td>GREEN:</td>
-                            <td><span class="result-value">0</span>%</td>
-                        </tr>
-                        <tr>
-                            <td>BLUE:</td>
-                            <td><span class="result-value">0</span>%</td>
-                        </tr>
-                    </table>
-                    <div class="flex-center">
-                        <p>SUCCESS</p>
-                        <p><span class="result-value">0</span>%</p>
+                <div id="result-area" class="flex">
+                    <div class="card">
+                        <div class="flex-center"><p>RESULT</p></div>
+                        <table>
+                            <tr>
+                                <td>RED:</td>
+                                <td><span class="result-value">0</span>%</td>
+                            </tr>
+                            <tr>
+                                <td>GREEN:</td>
+                                <td><span class="result-value">0</span>%</td>
+                            </tr>
+                            <tr>
+                                <td>BLUE:</td>
+                                <td><span class="result-value">0</span>%</td>
+                            </tr>
+                        </table>
+                        <div class="flex-center">
+                            <p>SUCCESS</p>
+                            <p><span class="result-value">0</span>%</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="flex-center"><p>OVERALL</p></div>
-                    <table>
-                        <tr>
-                            <td>RED:</td>
-                            <td><span class="result-value">0</span>%</td>
-                        </tr>
-                        <tr>
-                            <td>GREEN:</td>
-                            <td><span class="result-value">0</span>%</td>
-                        </tr>
-                        <tr>
-                            <td>BLUE:</td>
-                            <td><span class="result-value">0</span>%</td>
-                        </tr>
-                    </table>
-                    <div class="flex-center">
-                        <p>SUCCESS</p>
-                        <p><span class="result-value">0</span>%</p>
+                    <div class="card">
+                        <div class="flex-center"><p>OVERALL</p></div>
+                        <table>
+                            <tr>
+                                <td>RED:</td>
+                                <td><span class="result-value">0</span>%</td>
+                            </tr>
+                            <tr>
+                                <td>GREEN:</td>
+                                <td><span class="result-value">0</span>%</td>
+                            </tr>
+                            <tr>
+                                <td>BLUE:</td>
+                                <td><span class="result-value">0</span>%</td>
+                            </tr>
+                        </table>
+                        <div class="flex-center">
+                            <p>SUCCESS</p>
+                            <p><span class="result-value">0</span>%</p>
+                        </div>
                     </div>
                 </div>
             </div>
