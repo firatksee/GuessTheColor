@@ -1,0 +1,44 @@
+[class*="flex"] {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 1rem;
+    width: 160px !important;
+    aspect-ratio: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        90deg,
+        rgb(255, 128, 0) 0%,
+        rgb(255, 128, 255) 100%
+    );
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgb(255, 0, 128);
+}
+
+.btn:hover {
+    background: linear-gradient(
+        20deg,
+        rgb(255, 128, 0) 0%,
+        rgb(255, 128, 255) 100%
+    );
+    box-shadow: 0 0 15px rgb(255, 0, 128);
+}
+
+.btn:active {
+    background: linear-gradient(
+        10deg,
+        rgb(255, 128, 0) 0%,
+        rgb(255, 128, 255) 100%
+    );
+}

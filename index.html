@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guess The Color</title>
+        <link rel="icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/utility.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="flex-center">
+        <div class="container flex-center">
+            <div id="logo">GUESS THE COLOR</div>
+            <div class="target side"></div>
+            <div id="panel" class="flex-center">
+                <div id="input-area" class="flex-center">
+                    <div class="input-box">
+                        <p>RED</p>
+                        <input
+                            type="range"
+                            id="red"
+                            min="0"
+                            max="255"
+                            step="1"
+                        />
+                    </div>
+                    <div class="input-box">
+                        <p>GREEN</p>
+                        <input
+                            type="range"
+                            id="green"
+                            min="0"
+                            max="255"
+                            step="1"
+                        />
+                    </div>
+                    <div class="input-box">
+                        <p>BLUE</p>
+                        <input
+                            type="range"
+                            id="blue"
+                            min="0"
+                            max="255"
+                            step="1"
+                        />
+                    </div>
+                </div>
+                <button type="button" id="guess" class="btn">Guess</button>
+                <div class="card">
+                    <div class="flex-center"><p>RESULT</p></div>
+                    <table>
+                        <tr>
+                            <td>RED:</td>
+                            <td><span class="result-value">0</span>%</td>
+                        </tr>
+                        <tr>
+                            <td>GREEN:</td>
+                            <td><span class="result-value">0</span>%</td>
+                        </tr>
+                        <tr>
+                            <td>BLUE:</td>
+                            <td><span class="result-value">0</span>%</td>
+                        </tr>
+                    </table>
+                    <div class="flex-center">
+                        <p>SUCCESS</p>
+                        <p><span class="result-value">0</span>%</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex-center"><p>OVERALL</p></div>
+                    <table>
+                        <tr>
+                            <td>RED:</td>
+                            <td><span class="result-value">0</span>%</td>
+                        </tr>
+                        <tr>
+                            <td>GREEN:</td>
+                            <td><span class="result-value">0</span>%</td>
+                        </tr>
+                        <tr>
+                            <td>BLUE:</td>
+                            <td><span class="result-value">0</span>%</td>
+                        </tr>
+                    </table>
+                    <div class="flex-center">
+                        <p>SUCCESS</p>
+                        <p><span class="result-value">0</span>%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="guessing side"></div>
+        </div>
+        <script src="script/functions.js"></script>
+        <script src="script/app.js"></script>
+    </body>
+</html>
